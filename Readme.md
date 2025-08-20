@@ -1,4 +1,4 @@
-# 👕 Virtual Try-On Web App
+#  Virtual Try-On Web App
 
 This project implements a **Virtual Try-On system** using Streamlit.  
 It allows a user to upload their own image, select a clothing region (upper or lower),  
@@ -6,7 +6,7 @@ and apply a new clothing description via text prompt. The system automatically s
 
 ---
 
-## 🚀 Features
+##  Features
 - **Image Upload**: Upload your own image of a person.  
 - **Region Selection**: Choose between *Upper* (shirt, jacket, dress) or *Lower* (pants, skirt).  
 - **Prompt Input**: Describe the clothing item you want (e.g., `"A Hawaiian shirt with bright flowers"`).  
@@ -16,16 +16,16 @@ and apply a new clothing description via text prompt. The system automatically s
 
 ---
 
-## 🧠 Models Used
+##  Models Used
 
-### 1. Stable Diffusion v1.5 Inpainting
-- **Source**: [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)  
-- **Checkpoint**: `sd-v1-5-inpainting.ckpt`  
+### 1. Stable Diffusion v2 Inpainting
+- **Source**: [Stability AI / Stable Diffusion 2](https://huggingface.co/stabilityai/stable-diffusion-2-inpainting)  
+- **Checkpoint**: `512-inpainting-ema.ckpt`  
 - **Paper**:  
   > Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer.  
   > *High-Resolution Image Synthesis with Latent Diffusion Models.*  
   > CVPR 2022. [PDF](https://arxiv.org/abs/2112.10752)  
-- **License**: CreativeML OpenRAIL-M  
+- **License**: CreativeML Open RAIL++-M  
 
 Used here to **generate and inpaint clothing** onto the masked region based on text prompts.
 
