@@ -1,11 +1,10 @@
+transformers
 streamlit
 Pillow
 numpy
 opencv-python
-mediapipe
 torch
 torchvision
-transformers
 diffusers
 accelerate
 safetensors

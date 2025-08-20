@@ -14,7 +14,7 @@ from diffusers import StableDiffusionInpaintPipeline
 def load_segformer():
     processor = SegformerImageProcessor.from_pretrained(
         "mattmdjaga/segformer_b2_clothes",
-        use_fast=True  # Use fast processor to remove warning
+        use_fast=True 
     )
     model = AutoModelForSemanticSegmentation.from_pretrained("mattmdjaga/segformer_b2_clothes")
     return processor, model
@@ -98,7 +98,6 @@ if uploaded:
 
         st.image(result, caption="Result", use_container_width=True)
 
-        # Download button
         buf = io.BytesIO()
         result.save(buf, format="PNG")
         st.download_button(
